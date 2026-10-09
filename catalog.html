@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — Book Friends</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="header__logo" href="index.html">Book Friends</a>
+
+            <nav class="header__nav">
+                <a class="header__link" href="index.html">Главная</a>
+                <a class="header__link header__link--active" href="catalog.html">Каталог</a>
+                <a class="header__link" href="about.html">О клубе</a>
+            </nav>
+        </div>
+    </header>
+    <main class="page">
+        <section class="page-intro">
+            <div class="container">
+                <p class="page-intro__caption">Каталог</p>
+                <h1 class="page-intro__title">Книги клуба</h1>
+                <p class="page-intro__text">
+                    Небольшая подборка книг, которые мы обсуждали или планируем прочитать
+                </p>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="container">
+                <div class="filter">
+                    <button class="filter__button filter__button--active" data-filter="all">Все</button>
+                    <button class="filter__button" data-filter="classic">Классика</button>
+                    <button class="filter__button" data-filter="modern">Современное</button>
+                </div>
+
+                <div class="book-list">
+                    <article class="book-card" data-category="classic">
+                        <div class="book-card__cover book-card__cover--pink">1984</div>
+                        <h2 class="book-card__title">1984</h2>
+                        <p class="book-card__author">Джордж Оруэлл</p>
+                    </article>
+
+                    <article class="book-card" data-category="classic">
+                        <div class="book-card__cover book-card__cover--cream">Мастер и Маргарита</div>
+                        <h2 class="book-card__title">Мастер и Маргарита</h2>
+                        <p class="book-card__author">Михаил Булгаков</p>
+                    </article>
+
+                    <article class="book-card" data-category="modern">
+                        <div class="book-card__cover book-card__cover--green">Норвежский лес</div>
+                        <h2 class="book-card__title">Норвежский лес</h2>
+                        <p class="book-card__author">Харуки Мураками</p>
+                    </article>
+
+                    <article class="book-card" data-category="classic">
+                        <div class="book-card__cover book-card__cover--blue">Маленький принц</div>
+                        <h2 class="book-card__title">Маленький принц</h2>
+                        <p class="book-card__author">Антуан де Сент-Экзюпери</p>
+                    </article>
+
+                    <article class="book-card" data-category="modern">
+                        <div class="book-card__cover book-card__cover--gray">Щегол</div>
+                        <h2 class="book-card__title">Щегол</h2>
+                        <p class="book-card__author">Донна Тартт</p>
+                    </article>
+
+                    <article class="book-card" data-category="modern">
+                        <div class="book-card__cover book-card__cover--yellow">Цветы для Элджернона</div>
+                        <h2 class="book-card__title">Цветы для Элджернона</h2>
+                        <p class="book-card__author">Дэниел Киз</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__text">Book Friends, 2024</p>
+            <p class="footer__text">Book Friends</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

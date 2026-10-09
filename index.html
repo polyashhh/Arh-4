@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Friends — книжный клуб</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="header__logo" href="index.html">Book Friends</a>
+            <nav class="header__nav">
+                <a class="header__link header__link--active" href="index.html">Главная</a>
+                <a class="header__link" href="catalog.html">Каталог</a>
+                <a class="header__link" href="about.html">О клубе</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero__content">
+                <p class="hero__eyebrow">Книжный клуб</p>
+                <h1 class="hero__title">Читайте больше и обсуждайте интереснее в компании</h1>
+                <p class="hero__text">
+                    Выбираем книги вместе, читаем и встречаемся,
+                    чтобы обсудить самые интересные мысли о прочитанном 
+                </p>
+                <a class="button" href="catalog.html">Посмотреть книги</a>
+            </div>
+        </section>
+        <section class="books-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-heading__caption">Что читаем сейчас</p>
+                    <h2 class="section-heading__title">Выбор клуба</h2>
+                </div>
+                <div class="book-list">
+                    <article class="book-card">
+                        <div class="book-card__cover book-card__cover--pink">Бог мелочей</div>
+                        <h3 class="book-card__title">Бог мелочей</h3>
+                        <p class="book-card__author">Арундати Рой</p>
+                        <p class="book-card__text">
+                            Роман о жизни индийской семьи в эпоху после обретения независимости 
+                        </p>
+                    </article>
+                    <article class="book-card">
+                        <div class="book-card__cover book-card__cover--cream">Девятный спас</div>
+                        <h3 class="book-card__title">Девятный спас</h3>
+                        <p class="book-card__author">Анатолий Брусникин</p>
+                        <p class="book-card__text">
+                            Исторический детектив в стиле Акунина
+                        </p>
+                    </article>
+                    <article class="book-card">
+                        <div class="book-card__cover book-card__cover--green">Рога</div>
+                        <h3 class="book-card__title">Рога</h3>
+                        <p class="book-card__author">Джо Хилл</p>
+                        <p class="book-card__text">
+                            Мистический триллер с элементами хоррора
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="meeting">
+            <div class="container meeting__inner">
+                <div class="meeting__content">
+                    <p class="meeting__caption">Ближайшая встреча</p>
+                    <h2 class="meeting__title">Обсуждаем «Бог мелочей</h2>
+                    <p class="meeting__text">
+                        Встречаемся в субботу в 17:00. Можно прийти даже если книга
+                        ещё не дочитана - главное желание поговорить
+                    </p>
+                </div>
+                <form class="subscribe-form" id="subscribeForm">
+                    <label class="subscribe-form__label" for="email">Получать новости клуба</label>
+                    <input
+                        class="subscribe-form__input"
+                        id="email"
+                        type="email"
+                        placeholder="example@mail.ru"
+                        required
+                    >
+                    <button class="button button--dark" type="submit">Подписаться</button>
+                    <p class="subscribe-form__message" id="formMessage"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__text">Book Friends, 2024</p>
+            <p class="footer__text">Book Friends</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
